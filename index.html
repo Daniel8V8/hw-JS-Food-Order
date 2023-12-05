@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Order part1</title>
+  </head>
+  <body>
+    <script>
+      // data
+      foodName = "Salad"; // String
+      foodPriceValue = 15.0; // Number
+      foodPriceUnits = "MDL"; // String
+      foodDeliveryCost = 50.0; //Number
+
+      // alert ( "We have" + foodName )
+      clientQuantity = prompt("MENU\n\n" + foodName + "\n\nHow many?");
+
+      totalCost = foodPriceValue * clientQuantity + foodDeliveryCost;
+
+      //   alert( " you`ve ordered " + clientQuantity )
+      alert(
+        "You`ve ordered " +
+          clientQuantity +
+          "\nDelivery Cost " +
+          foodDeliveryCost +
+          foodPriceUnits +
+          "\nbill " +
+          totalCost +
+          foodPriceUnits
+      );
+      //   alert ( "Delivery Cost " + foodDeliveryCost + foodPriceUnits )
+
+      // HW-1 delivery tax
+    </script>
+  </body>
+</html>
